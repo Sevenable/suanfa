@@ -1,2 +1,0 @@
-# suanfa
-Algorithm practice
