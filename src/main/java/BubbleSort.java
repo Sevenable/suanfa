@@ -27,7 +27,7 @@ import java.util.Arrays;
  * \"	转义"
  * \\转义\
  */
-public class bubbleSort {
+public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = new int[]{-100, -999, 13, 2, 5, 888, 1999, 20000, -1000};
         //冒泡排序

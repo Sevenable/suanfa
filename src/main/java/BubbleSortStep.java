@@ -2,7 +2,7 @@ package src.main.java;
 
 import java.util.Arrays;
 
-public class bubbleSortStep {
+public class BubbleSortStep {
     public static void main(String[] args) {
         int[] arr = {3,9,-1,10,-2};
         System.out.println("冒泡排序之前的序列：");
