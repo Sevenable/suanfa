@@ -4,7 +4,7 @@ import java.util.Random;
  * 二叉树排序
  * 二叉树的遍历
  * 二叉树的遍历分为：
- *
+ * <p>
  * 前序遍历：根节点－左子树－右子树
  * 中序遍历：左子树－根节点－右子树
  * 后序遍历：左子树－右子树－根节点
@@ -27,8 +27,10 @@ public class BinaryTreeSort {
         // 打印数组
         printArray(ary);
     }
+
     /**
      * 插入排序
+     *
      * @param ary
      */
     private static void binaryInsert(int[] ary) {
@@ -42,7 +44,7 @@ public class BinaryTreeSort {
 //			int index = binarySearchDesc(ary, ary[j], 0, j - 1);// 复杂度：O(logn)
             int index = binarySearchDesc2(ary, ary[j], 0, j - 1);// 复杂度：O(logn)
             printArray(ary);
-            System.out.println("第" + j +"个索引上的元素要插入的位置是：" + index);
+            System.out.println("第" + j + "个索引上的元素要插入的位置是：" + index);
             // 将目标插入位置，同一时候右移目标位置右边的元素
             for (int i = j; i > index; i--) {// 复杂度,最差情况：(n-1)+(n-2)+...+n/2=O(n^2)
                 ary[i] = ary[i - 1]; //i-1 <==> index
@@ -57,14 +59,10 @@ public class BinaryTreeSort {
     /**
      * 二分查找 升序 递归
      *
-     * @param ary
-     *            给定已排序的待查数组
-     * @param target
-     *            查找目标
-     * @param from
-     *            当前查找的范围起点
-     * @param to
-     *            当前查找的返回终点
+     * @param ary    给定已排序的待查数组
+     * @param target 查找目标
+     * @param from   当前查找的范围起点
+     * @param to     当前查找的返回终点
      * @return 返回目标在数组中，按顺序应在的位置
      */
     private static int binarySearchAsc(int[] ary, int target, int from, int to) {
@@ -94,6 +92,7 @@ public class BinaryTreeSort {
             }
         }
     }
+
     /**
      * 二分查找 降序， 递归
      */
@@ -125,7 +124,7 @@ public class BinaryTreeSort {
             if (ary[mid] > target) {
                 from = mid + 1;
             } else {
-                to  = mid -1;
+                to = mid - 1;
             }
         }
         //from <==> to;
