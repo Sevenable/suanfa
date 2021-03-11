@@ -45,7 +45,7 @@ public class Interator {
         System.out.println("it====>"+it);
 
         while (it.hasNext()){
-            String str = (String) it.next();
+            String str = it.next();
         //out:a b c d
             System.out.println(str);
         }
