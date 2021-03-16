@@ -1,3 +1,5 @@
+package com.able;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
@@ -27,6 +29,7 @@ import java.util.Iterator;
  * @return the next element in the iteration
  * @throws NoSuchElementException if the iteration has no more elements
  */
+
 /**
  *返回迭代中的下一个元素。
  *@返回迭代中的下一个元素
