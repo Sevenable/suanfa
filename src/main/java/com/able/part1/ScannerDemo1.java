@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package com.able.part1;
 
-public class ScannerDemo {
+public class ScannerDemo1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         // 从键盘接收数据
